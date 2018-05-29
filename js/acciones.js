@@ -26,7 +26,7 @@ function onDeviceReady(){
 		'Altitude Accuracy: '   + position.coords.altitudeAccuracy +'\n'+
 		'Heading: '   + position.coords.heading +'\n'+
 		'Speed: '   + position.coords.speed +'\n'+
-		'Timestamp: '   + position.coords.timestamp +'\n');
+		'Timestamp: '   + position.timestamp +'\n');
 	 };
 	 
 	 function onError(error){
@@ -45,7 +45,7 @@ function onDeviceReady(){
 		 $('#longitud').html(position.coords.longitude);
 		 $('#altitud').html(position.coords.altitude);
 		 $('#accuracy').html(position.coords.accuracy);
-		 $('#aaccuracy').html(position.coords.altitudAccuracy);
+		 $('#aaccuracy').html(position.coords.altitudeAccuracy);
 		 $('#headingg').html(position.coords.heading);
 		 $('#speed').html(position.coords.speed);
 		 $('#timestamp').html(position.timestamp);
